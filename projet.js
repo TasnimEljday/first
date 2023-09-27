@@ -7,6 +7,7 @@ onscroll = function () {
     scrolll.classList.add("hide");
   }
 };
+
 scrolll.onclick = function () {
   scroll({
     left: 0,
@@ -25,7 +26,7 @@ let count = document.getElementById("count");
 let result = document.getElementById("result");
 let creat = document.getElementById("creat");
 
-//La somme:
+//? La somme:
 function TheTotal() {
   if (price.value != "") {
     let all = +price.value + +taxes.value + +ads.value - +discount.value;
@@ -36,7 +37,6 @@ function TheTotal() {
     result.style.color = "2c043c";
   }
 }
-//cruds:
 
 //! Creat:
 var AllTheResult = [];
@@ -74,7 +74,7 @@ creat.onclick = function () {
   readData();
 };
 
-//1_read:
+//! Read:
 function readData() {
   let table = "";
 
